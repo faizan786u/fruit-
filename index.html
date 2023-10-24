@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title> starbuck</title>
+</head>
+<body>
+	<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="logo.png" class="logo" /></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+           
+        </ul>
+    </header>
+
+    <div class="content">
+        <div class="textBox">
+            <h2>It's not just Juice<br />It's <span id="output"> Magenta</span></h2>
+            <p>MAKE EVERY SIP MORE REWARDING <br />
+                Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food,
+                get free refills, pay and order with your phone, and more.
+            </p>
+            <a href="#" id="learnmore">Learn More</a>
+        </div>
+
+        <div class="imgBox">
+            <img src="yellow.png"
+                alt="" class="starbucks">
+        </div>
+    </div>
+
+    <ul class="thumbnails">
+        <li>
+            <img id="changeGreen" src="yellow.png" onclick="imageSlider('yellow.png');
+                        changeCircleColor('orange')
+                        changeSpanColor('orange')">
+        </li>
+         <li>
+            <img id="changeyellow" src="kiwi.png" onclick="imageSlider('kiwi.png');
+                        changeCircleColor('green')
+                        changeSpanColor('green')">
+        </li>
+        <li>
+            <img id="changePink1" src="red.png" onclick="imageSlider('red.png');
+                        changeCircleColor('red')
+                        changeSpanColor('red')">
+        </li>
+        <li>
+            <img id="changePink2" src="blue.png" onclick="imageSlider('blue.png');
+                        changeCircleColor('darkblue')
+                        changeSpanColor('darkblue')">
+        </li>
+    </ul>
+
+    <ul class="social" id="social">
+        <li><a href="https://www.facebook.com/Starbucks/" target="_blank"><img
+                    src="https://starbucks-landing-page.netlify.app/public/images/facebook.png"></a></li>
+        <li><a href="https://twitter.com/Starbucks" target="_blank"><img
+                    src="https://starbucks-landing-page.netlify.app/public/images/twitter.png"></a></li>
+        <li><a href="https://www.instagarm.com/starbucks_sa" target="_blank"><img
+                    src="https://starbucks-landing-page.netlify.app/public/images/instagram.png"></a></li>
+    </ul>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
